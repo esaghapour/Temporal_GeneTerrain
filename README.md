@@ -5,8 +5,13 @@ Temporal GeneTerrain is a groundbreaking visualization tool developed to explore
 
 The tool integrates multiple time-specific GeneTerrains into a cohesive temporal framework, offering novel insights into gene expression evolution in response to drug perturbations, with a focus on prostate cancer cell lines.
 
-![Project Screenshot](/path/to/image.png)
+![image](https://github.com/esaghapour/Temporal_GeneTerrain/blob/main/Framework.jpg)
 
+A framework for constructing Temporal GeneTerrains involving two steps: Step-1, Generating the GeneTerrain for visualizing using the network biology of genes and gene signals; Step-2, Stitching the GeneTerrain generated in Step-1 based on their chronological order.
+
+Try it! 
+
+[Temporal GeneTerrain](https://saghapour.shinyapps.io/Drug_resistance/) 
 
 ### Built With
 - Bioinformatics
