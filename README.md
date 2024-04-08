@@ -1,54 +1,62 @@
-\documentclass{article}
-
-\usepackage{hyperref}
-\usepackage{geometry}
-\usepackage{listings}
-\geometry{a4paper, margin=1in}
-
-\title{README: Basic Writing and Formatting Syntax for GitHub Markdown}
-\author{}
-\date{}
-
-\begin{document}
-
-\maketitle
-
-\section*{Headings}
-
-To create a heading, add one to six \# symbols before your heading text. The number of \# you use will determine the size of the heading.
-
-\begin{lstlisting}
-# The largest heading
-## The second largest heading
-###### The smallest heading
 \end{lstlisting}
 
-\section*{Styling Text}
+\section*{Links}
 
-You can indicate emphasis with bold, italic, or strikethrough text.
-
-\begin{itemize}
-    \item \textbf{Bold}: \textbf{**Bold**}
-    \item \textit{Italic}: \textit{*Italic*}
-    \item \sout{Strikethrough}: \sout{~~Strikethrough~~}
-\end{itemize}
-
-\section*{Quoting Text}
-
-You can quote text with a \textgreater{}.
+You can create an inline link by wrapping link text in brackets (\[ \]), and then wrapping the URL in parentheses (\( \)).
 
 \begin{lstlisting}
-> Quoted text
+This site was built using [GitHub Pages](https://pages.github.com/).
 \end{lstlisting}
 
-\section*{Quoting Code}
+\section*{Images}
 
-You can call out code or a command within a sentence with single backticks (\`). The text within the backticks will not be formatted.
+You can display an image by adding ! and wrapping the alt text in brackets (\[ \]), and then wrapping the link for the image in parentheses (\( \)).
 
 \begin{lstlisting}
-Use `git status` to list all new or modified files that haven't yet been committed.
+![GitHub Logo](/images/logo.png)
 \end{lstlisting}
 
-To format code or text into its own distinct block, use triple backticks (\`\`\`).
+\section*{Lists}
+
+You can make an unordered list by preceding list items with a hyphen (-) or asterisk (*).
 
 \begin{lstlisting}
+- Item 1
+- Item 2
+  - Sub Item 2.1
+  - Sub Item 2.2
+\end{lstlisting}
+
+To order your list, precede each line with a number.
+
+\begin{lstlisting}
+1. Item 1
+2. Item 2
+\end{lstlisting}
+
+\section*{Task Lists}
+
+To create a task list, preface list items with a regular character, followed by brackets. To mark a task as complete, use an x.
+
+\begin{lstlisting}
+- [x] Completed task
+- [ ] Incomplete task
+\end{lstlisting}
+
+\section*{Mentioning People and Teams}
+
+You can mention a person or team on GitHub by typing @ plus their username or team name.
+
+\begin{lstlisting}
+@github/support What do you think about these updates?
+\end{lstlisting}
+
+\section*{Using Emojis}
+
+You can add emoji to your writing by typing :EMOJICODE:
+
+\begin{lstlisting}
+:+1: This PR looks great - it's ready to merge! :shipit:
+\end{lstlisting}
+
+\end{document}
